@@ -9,7 +9,7 @@ def tonum(s):
         return float(s)
 x = 0
 for line in sys.stdin:
-    x += tonum(line)
+    x += tonum(line.rstrip()) #line.rstrip()で末尾の改行を除去
 
 print(x)
 
